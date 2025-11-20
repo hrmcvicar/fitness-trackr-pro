@@ -5,10 +5,12 @@ import Layout from "./layout/Layout.jsx";
 import Register from "./auth/Register";
 import Login from "./auth/Login";
 import ActivitiesPage from "./activities/ActivitiesPage";
+import RoutinesPage from "./Routines/RoutinesPage.jsx";
 import Error404 from "./Error404.jsx";
 
 //import ActivityList from "./activities/ActivityList.jsx";
 import ActivityDetails from "./activities/ActivityDetails.jsx";
+import RoutineDetails from "./Routines/RoutineDetails.jsx";
 //import { useState, useEffect } from "react";
 
 /**
@@ -35,6 +37,8 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/activities" element={<ActivitiesPage />} />
         <Route path="/activities/:id" element={<ActivityDetails />} />
+        <Route path="/routines" element={<RoutinesPage />} />
+        <Route path="/routines/:id" element={<RoutineDetails />} />
         <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
